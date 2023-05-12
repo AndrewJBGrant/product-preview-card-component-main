@@ -133,10 +133,16 @@ background-color: var(--clr-primary-400);
 color: var(--clr-neutral-100);
 font-weight: var(--fw--bold);
 font-size: 0.925rem;
+
+transition: transform 1000ms;
 }
 
 .button:is(:hover, :focus) {
   background-color: var(--clr-primary-500);
+
+  transform: translateY(-10px);
+
+  transition: transform 250ms;
 }
 
 .button[data-icon="shopping-cart"]::before {
